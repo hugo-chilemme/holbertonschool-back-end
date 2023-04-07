@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Script to export user tasks to CSV"""
-import requests
+from api_request import api_request
 import sys
 
 
