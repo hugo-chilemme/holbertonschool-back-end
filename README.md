@@ -1,4 +1,6 @@
 # Holberton Back End (Language Python)
-##### Holberton School ([www.holbertonschool.com](www.holbertonschool.com))
 &nbsp;
-- [Python - API](api/)
+| Project Name | Description | More information |
+| ------ |  ------ | ------ |
+| API | Using an API to retrieve data | View |
+
