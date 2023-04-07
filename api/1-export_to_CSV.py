@@ -17,7 +17,7 @@ if __name__ == '__main__':
                 todos = todos.json()
                 csv = ""
                 for todo in todos:
-                    csv += '"{}", "{}", "{}", "{}"\n'.format(
+                    csv += '"{}","{}","{}","{}"\n'.format(
                         todo["userId"],
                         user["username"],
                         todo["completed"],
