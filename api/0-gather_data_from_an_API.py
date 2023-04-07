@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""script to get all done task of the user"""
 import requests
 import sys
 
