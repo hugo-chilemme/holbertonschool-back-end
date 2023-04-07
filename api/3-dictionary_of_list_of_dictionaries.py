@@ -36,7 +36,7 @@ if __name__ == '__main__':
 
             # We browse data by data to add in the table
             for todo in todos:
-                userId = todo['userId']
+                userId = str(todo['userId'])
                 # We check that the user table does not exist to create it
                 if userId not in callback:
                     callback[userId] = []
@@ -45,8 +45,9 @@ if __name__ == '__main__':
                 callback[userId].append({
                     "task": todo['title'],
                     "completed": todo['completed'],
-                    "username": users[userId]['username']
+                    "username": users[int(userId)]['username']
                 })
+            print(callback)
 
             # Sending data to a .json file
             with open("todo_all_employees.json", 'w') as csvfile:
