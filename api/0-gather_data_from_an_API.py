@@ -5,13 +5,15 @@ import sys
 
 
 if __name__ == '__main__':
+    api_url = "https://jsonplaceholder.typicode.com"
+    
     """script to get all done task of the user"""
     id = sys.argv[1]
-    user = requests.get('https://jsonplaceholder.typicode.com/users/'+id)
+    user = requests.get("{}/users/{}".format(api_url, id))
     if user.status_code == 200:
         user = user.json()
-        if len(user) > 0:        
-            todos = requests.get('https://jsonplaceholder.typicode.com/todos?userId='+id)
+        if len(user) > 0:
+            todos = requests.get("{}/todos?userId={}".format(api_url, id))
             todos = todos.json()
             completed = list(filter(lambda todo: todo["completed"], todos))
             
