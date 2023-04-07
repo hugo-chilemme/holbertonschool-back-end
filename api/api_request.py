@@ -6,11 +6,13 @@ from urllib.parse import urlencode
 
 def api_request(event_url, params={}):
     """
-        description:
-            API call function
-        parameters:
-            @event_url: contains the target route with possibly parameters
-            @params: to pass to the API in object format
+        ? description:
+            * API call function
+        ? parameters:
+            * @event_url:
+                contains the target route with possibly parameters
+            * @params:
+                to pass to the API in object format
     """
 
     # check that the @event_url is correct
