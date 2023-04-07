@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """script to get all done task of the user"""
+import json
 import requests
 import sys
-import json
 
 if __name__ == '__main__':
     api_url = "https://jsonplaceholder.typicode.com"
@@ -19,8 +19,8 @@ if __name__ == '__main__':
                 callback[id] = []
                 for todo in todos:
                     callback[id].append({
-                        "task": todo['title'], 
-                        "completed": todo['completed'], 
+                        "task": todo['title'],
+                        "completed": todo['completed'],
                         "username": user['username']
                     })
                 with open("{}.json".format(id), 'w') as csvfile:
