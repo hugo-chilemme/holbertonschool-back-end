@@ -23,8 +23,7 @@ if __name__ == '__main__':
                         todo["completed"],
                         todo["title"]
                     )
-                csv = csv[:-1] # delete \n
+                csv = csv[:-1]
                 with open("{}.csv".format(id), 'w') as csvfile:
                     csvfile.write(csv)
                     csvfile.close()
-
