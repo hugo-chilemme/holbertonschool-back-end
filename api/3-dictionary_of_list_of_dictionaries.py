@@ -37,7 +37,6 @@ if __name__ == '__main__':
                     "completed": todo['completed'],
                     "username": users[int(userId)]['username']
                 })
-            print(callback)
 
             # Sending data to a .json file
             with open("todo_all_employees.json", 'w') as csvfile:
