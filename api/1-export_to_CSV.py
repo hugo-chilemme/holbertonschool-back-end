@@ -14,7 +14,7 @@ if __name__ == '__main__':
         if len(user) > 0:
 
             # User task retrievals
-            todos = api_request(f"todos?userId={id}")
+            todos = api_request(f"todos", {"userId": id})
             if len(todos) > 0:
 
                 # Inserting data line by line
