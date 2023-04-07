@@ -9,7 +9,7 @@ def api_request(event_url, params = {}):
             API call function 
         parameters:
             @event_url: contains the target route with possibly parameters
-            @queries: 
+            @params: to pass to the API in object format
     """
     
     # check that the @event_url is correct
